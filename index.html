@@ -17,7 +17,8 @@
             /* Gris clair */
             padding: 10px;
             border-radius: 5px;
-            margin-top: 60px; /* Augmentation de la marge supérieure */
+            margin-top: 60px;
+            /* Augmentation de la marge supérieure */
         }
 
         .main-header {
@@ -26,7 +27,8 @@
             padding: 20px;
             border-radius: 5px;
             text-align: center;
-            margin-bottom: 60px; /* Augmentation de la marge inférieure */
+            margin-bottom: 60px;
+            /* Augmentation de la marge inférieure */
         }
 
         .card {
@@ -38,7 +40,29 @@
         }
 
         .section-margin {
-            margin-top: 60px; /* Augmentation de la marge supérieure */
+            margin-top: 60px;
+            /* Augmentation de la marge supérieure */
+        }
+
+        .content-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+
+        #cv-description strong,
+        .content-box strong {
+            color: #333;
+        }
+
+        #cv-description p,
+        .content-box p {
+            text-align: justify;
+            color: #666;
+            margin: 0 0 10px;
         }
     </style>
 </head>
@@ -47,45 +71,68 @@
     <div class="container">
         <h1 class="my-4 main-header">Eva Quénault</h1>
 
-        <p id="cv-description">
-            Hello ! Je m'appelle <strong>Eva Quénault</strong> et j'ai 20 ans. <br>
-            Je suis actuellement étudiante en <strong>BTS SIO</strong> (Service Informatique aux Organisations)
-            spécialité SLAM. <br>
-            J'ai toujours été particulièrement attirée par le monde de l'Informatique, une passion que je dois à mon
-            père.
-            Après une année en licence de droit, j'ai décidé de me réorienter vers le développement informatique, avec
-            pour objectif : devenir <strong>professeur de
-                cybersécurité</strong>
-            afin de transmettre aux futures générations les connaissances essentielles dans ce monde où l'informatique
-            occupe une place de plus en plus importante.
-        </p>
+        <div id="cv-description" class="content-box">
+            <p>
+                Bonjour, je m'appelle <strong>Eva Quénault</strong> et j'ai 20 ans.
+            </p>
+            <p>
+                Je suis actuellement étudiante en <strong>BTS SIO</strong> (Service Informatique aux Organisations)
+                spécialité SLAM.
+            </p>
+            <p>
+                J'ai toujours été particulièrement attirée par le monde de l'informatique, une passion que je dois à mon
+                père. Après une année en licence de droit, j'ai décidé de me réorienter vers le développement informatique,
+                avec pour objectif : devenir <strong>professeur de cybersécurité</strong> afin de transmettre aux futures
+                générations les connaissances essentielles dans ce monde où l'informatique occupe une place de plus en plus
+                importante.
+            </p>
+            <p>
+                J'ai donc pour objectif de poursuivre mes études en effectuant une troisième année en développement (b3),
+                ainsi qu'un master afin de me spécialiser dans la cybersécurité.
+            </p>
+        </div>
 
         <h2 class="section-header">Mes documents</h2>
-        <div class="row">
-            <div class="col-sm-3 mb-4">
-                <a href="https://github.com/ekeno78">
-                    <i class="fab fa-github icon-size"></i>
-                </a>
-            </div>
-            <div class="col-sm-3 mb-4">
-                <a href="image/vc2.jpg">
-                    <i class="fas fa-file-alt icon-size"></i>
-                </a>
-            </div>
-            <div class="col-sm-3 mb-4">
-                <a href="https://www.linkedin.com/in/%C3%A9va-qu%C3%A9nault-0204a4212/">
-                    <i class="fab fa-linkedin icon-size" style="color: #0e76a8;"></i>
-                </a>
-            </div>
-            <div class="col-sm-3 mb-4">
-                <a href="Copie de Tableau de synthèse - Epreuve E4 - BTS SIO 2023.xlsx">
-                    <i class="fas fa-file-excel icon-size" style="color: #20b663;"></i>
-                </a>
+        <div class="content-box">
+            <div class="row">
+                <div class="col-sm-3 mb-4">
+                    <div class="text-center">
+                        <a href="https://github.com/ekeno78">
+                            <i class="fab fa-github icon-size"></i>
+                        </a>
+                        <p class="mt-2">GitHub</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 mb-4">
+                    <div class="text-center">
+                        <a href="image/vc2.jpg">
+                            <i class="fas fa-file-alt icon-size"></i>
+                        </a>
+                        <p class="mt-2">CV</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 mb-4">
+                    <div class="text-center">
+                        <a href="https://www.linkedin.com/in/%C3%A9va-qu%C3%A9nault-0204a4212/">
+                            <i class="fab fa-linkedin icon-size" style="color: #0e76a8;"></i>
+                        </a>
+                        <p class="mt-2">LinkedIn</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 mb-4">
+                    <div class="text-center">
+                        <a href="Copie de Tableau de synthèse - Epreuve E4 - BTS SIO 2023.xlsx">
+                            <i class="fas fa-file-excel icon-size" style="color: #20b663;"></i>
+                        </a>
+                        <p class="mt-2">Tableau de Compétences</p>
+                    </div>
+                </div>
             </div>
         </div>
 
+
         <h2 class="section-header section-margin">Mes Stages</h2>
-        <div id="stage-section">
+        <div class="content-box" id="stage-section">
             <div class="mb-4">
                 <h3>Akuo Energy, Paris (France)</h3>
                 <p><strong>Mai-Juin 2023</strong></p>
